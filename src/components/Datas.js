@@ -37,8 +37,8 @@ export const MenuDatas = [
     icon: HiOutlineHome,
   },
   {
-    title: "Patients",
-    path: "/patients",
+    title: "Customers",
+    path: "/customers",
     icon: TbUsers,
   },
   {
@@ -421,9 +421,9 @@ export const campaignData = [
     title: "Offer on Dental Checkup",
     date: "3 days ago",
     type: "email",
-    sendTo: "All Patients",
+    sendTo: "All Customers",
     action: {
-      subject: "Delight patients with a free dental checkup",
+      subject: "Delight customers with a free dental checkup",
       message:
         "Dear Patient, We are delighted to offer you a free dental checkup. Please visit our clinic to avail this offer. Thank you. and have a nice day. and welcome to our clinic.",
       subHeader: "Offer on Dental Checkup",
@@ -436,7 +436,7 @@ export const campaignData = [
     title: "Britam Insurance Offer",
     date: "8 days ago",
     type: "whatsapp",
-    sendTo: "Britam Patients",
+    sendTo: "Britam Customers",
     action: {
       message:
         "Hellow Patient, are you looking for a free dental checkup? We are delighted to offer you a free dental checkup. Please visit our clinic to avail this offer. Thank you.",
@@ -447,7 +447,7 @@ export const campaignData = [
     title: "NHCF Insurance Offer",
     date: "10 days ago",
     type: "sms",
-    sendTo: "NHCF Patients",
+    sendTo: "NHCF Customers",
     action: {
       message:
         "Hola, Delight patient with NHCF Insurance, We are delighted to offer you a free dental checkup. Please visit our clinic to avail this offer. Thank you.",
@@ -455,10 +455,10 @@ export const campaignData = [
   },
   {
     id: 4,
-    title: "Cash patients offer",
+    title: "Cash customers offer",
     date: "15 days ago",
     type: "sms",
-    sendTo: "Cash Patients",
+    sendTo: "Cash Customers",
     action: {
       message:
         "Delight Patient, now get 50% off on dental checkup. Please visit our clinic to avail this offer. Thank you. and have a nice day. and welcome to our clinic.",
@@ -469,12 +469,12 @@ export const campaignData = [
     title: "Braces Offer",
     date: "12 days ago",
     type: "email",
-    sendTo: "Britam Patients",
+    sendTo: "Britam Customers",
     action: {
-      subject: "Delight patients with a free dental checkup",
+      subject: "Delight customers with a free dental checkup",
       message:
         "Dear Patient, Britam Insurance is delighted to offer you a free dental checkup. Please visit our clinic to avail this offer. Thank you. and have a nice day. and welcome to our clinic.",
-      subHeader: "Braces Offer for Britam Patients",
+      subHeader: "Braces Offer for Britam Customers",
       header: "Now get braces at 50% off",
       footer: "This offer is valid till 30th June, 2021",
     },
@@ -484,7 +484,7 @@ export const campaignData = [
     title: "Teeth Whitening Offer",
     date: "20 days ago",
     type: "whatsapp",
-    sendTo: "All Patients",
+    sendTo: "All Customers",
     action: {
       message:
         "Hola, Delight patient with Teeth Whitening Offer, We are delighted to offer you a free dental checkup. Please visit our clinic to avail this offer. Thank you.",
@@ -1074,7 +1074,7 @@ export const doctorTab = [
   },
   {
     id: 2,
-    title: "Patients",
+    title: "Customers",
     icon: BiUserPlus,
   },
   {

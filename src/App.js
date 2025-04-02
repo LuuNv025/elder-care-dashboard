@@ -1,14 +1,3 @@
-// ********* Delight - Dentist Website is created by Zpunet ******************
-// ********* If you get an error please contact us ******
-// ******** Email:info@codemarketi.com *********
-// ********* Website:www.codemarketi.com *********
-// ********* Phone:+255 762 352 746 *********
-// ********* Youtub Channel: https://www.youtube.com/channel/UCOYwYO-LEsrjqBs6xXSfq1w *********
-
-// ******** Support my work with *********
-// ********* https://www.patreon.com/zpunet *********
-// ********* https://www.buymeacoffee.com/zpunet *********
-
 // ********* This is the main component of the website *********
 
 import "./App.css";
@@ -62,13 +51,17 @@ function App() {
           <Route path="/payments/edit/:id" element={<EditPayment />} />
           <Route path="/payments/preview/:id" element={<PreviewPayment />} />
           {/* patient */}
-          <Route path="/patients" element={<Patients />} />
-          <Route path="/patients/preview/:id" element={<PatientProfile />} />
-          <Route path="/patients/create" element={<CreatePatient />} />
-          <Route path="/patients/visiting/:id" element={<NewMedicalRecode />} />
+          <Route path="/customers" element={<Patients />} />
+          <Route path="/customers/preview/:id" element={<PatientProfile />} />
+          <Route path="/customers/create" element={<CreatePatient />} />
+          <Route
+            path="/customers/visiting/:id"
+            element={<NewMedicalRecode />}
+          />
           {/* doctors */}
           <Route path="/nurses" element={<Nurses />} />
           <Route path="/nurses/preview/:id" element={<DoctorProfile />} />
+
           {/* reception */}
           <Route path="/receptions" element={<Receptions />} />
           {/* others */}

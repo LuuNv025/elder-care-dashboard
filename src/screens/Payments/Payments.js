@@ -79,7 +79,7 @@ function Payments() {
         <p className="hidden text-sm group-hover:block">Export</p>
         <MdOutlineCloudDownload className="text-2xl" />
       </button>
-      <h1 className="text-xl font-semibold">Payments</h1>
+      <h1 className="text-xl font-semibold">Thanh toán</h1>
       {/* boxes */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
         {boxes.map((box) => (
@@ -119,7 +119,7 @@ function Payments() {
         <div className="grid lg:grid-cols-5 grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-2">
           <input
             type="text"
-            placeholder='Search "Patients"'
+            placeholder='Search "Customers"'
             className="h-14 text-sm text-main rounded-md bg-dry border border-border px-4"
           />
           {/* sort  */}

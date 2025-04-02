@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import Layout from '../../Layout';
-import { Link } from 'react-router-dom';
-import { IoArrowBackOutline } from 'react-icons/io5';
-import { Button, Checkbox, Select, Textarea } from '../../components/Form';
-import { BiChevronDown, BiPlus } from 'react-icons/bi';
-import { medicineData, memberData, servicesData } from '../../components/Datas';
-import { MedicineDosageTable } from '../../components/Tables';
-import { toast } from 'react-hot-toast';
-import MedicineDosageModal from '../../components/Modals/MedicineDosage';
-import { FaTimes } from 'react-icons/fa';
-import Uploader from '../../components/Uploader';
-import { HiOutlineCheckCircle } from 'react-icons/hi';
+import React, { useState } from "react";
+import Layout from "../../Layout";
+import { Link } from "react-router-dom";
+import { IoArrowBackOutline } from "react-icons/io5";
+import { Button, Checkbox, Select, Textarea } from "../../components/Form";
+import { BiChevronDown, BiPlus } from "react-icons/bi";
+import { medicineData, memberData, servicesData } from "../../components/Datas";
+import { MedicineDosageTable } from "../../components/Tables";
+import { toast } from "react-hot-toast";
+import MedicineDosageModal from "../../components/Modals/MedicineDosage";
+import { FaTimes } from "react-icons/fa";
+import Uploader from "../../components/Uploader";
+import { HiOutlineCheckCircle } from "react-icons/hi";
 
 const doctorsData = memberData.map((item) => {
   return {
@@ -62,7 +62,7 @@ function NewMedicalRecode() {
       }
       <div className="flex items-center gap-4">
         <Link
-          to={`/patients/preview/1`}
+          to={`/customers/preview/1`}
           className="bg-white border border-subMain border-dashed rounded-lg py-3 px-4 text-md"
         >
           <IoArrowBackOutline />
@@ -87,7 +87,7 @@ function NewMedicalRecode() {
             <p className="text-xs text-textGray">amanimmassy@gmail.com</p>
             <p className="text-xs">+254 712 345 678</p>
             <p className="text-xs text-subMain bg-text font-medium py-1 px-4 rounded-full border-[0.5px] border-subMain">
-              45 yrs{' '}
+              45 yrs{" "}
             </p>
           </div>
         </div>
@@ -118,21 +118,21 @@ function NewMedicalRecode() {
               label="Complains"
               color={true}
               rows={3}
-              placeholder={'Bad breath, toothache, ....'}
+              placeholder={"Bad breath, toothache, ...."}
             />
             {/* Diagnosis */}
             <Textarea
               label="Diagnosis"
               color={true}
               rows={3}
-              placeholder={'Gingivitis, Periodontitis, ....'}
+              placeholder={"Gingivitis, Periodontitis, ...."}
             />
             {/* Vital Signs */}
             <Textarea
               label="Vital Signs"
               color={true}
               rows={3}
-              placeholder={'Blood pressure, Pulse, ....'}
+              placeholder={"Blood pressure, Pulse, ...."}
             />
             {/* Treatment */}
             <div className="flex w-full flex-col gap-4">
@@ -159,7 +159,7 @@ function NewMedicalRecode() {
                   data={medicineData?.slice(0, 3)}
                   functions={{
                     delete: (id) => {
-                      toast.error('This feature is not available yet');
+                      toast.error("This feature is not available yet");
                     },
                   }}
                   button={true}
@@ -182,12 +182,12 @@ function NewMedicalRecode() {
                   <div className="relative w-full">
                     <img
                       src={`https://placehold.it/300x300?text=${i}`}
-                      alt="patient"
+                      alt="customers"
                       className="w-full  md:h-40 rounded-lg object-cover"
                     />
                     <button
                       onClick={() =>
-                        toast.error('This feature is not available yet.')
+                        toast.error("This feature is not available yet.")
                       }
                       className="bg-white rounded-full w-8 h-8 flex-colo absolute -top-1 -right-1"
                     >
@@ -200,10 +200,10 @@ function NewMedicalRecode() {
             </div>
             {/* submit */}
             <Button
-              label={'Save'}
+              label={"Save"}
               Icon={HiOutlineCheckCircle}
               onClick={() => {
-                toast.error('This feature is not available yet');
+                toast.error("This feature is not available yet");
               }}
             />
           </div>

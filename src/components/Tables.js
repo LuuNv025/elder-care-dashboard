@@ -5,6 +5,7 @@ import { FiEdit, FiEye } from "react-icons/fi";
 import { RiDeleteBin6Line, RiDeleteBinLine } from "react-icons/ri";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const thclass = "text-start text-sm font-medium py-3 px-2 whitespace-nowrap";
 const tdclass = "text-start text-sm py-4 px-2 whitespace-nowrap";
@@ -460,6 +461,7 @@ export function DoctorsTable({ data, functions, doctor }) {
           <th className={thclass}>Điện Thoại</th>
           <th className={thclass}>Chức Danh</th>
           <th className={thclass}>Email</th>
+          <th className={thclass}>Xem lương</th>
           <th className={thclass}>Hành Động</th>
         </tr>
       </thead>
@@ -488,7 +490,14 @@ export function DoctorsTable({ data, functions, doctor }) {
             </td>
             <td className={tdclass}>{item.title}</td>
             <td className={tdclass}>{item.user.email}</td>
-
+            <td className={tdclass}>
+              <Link
+                to={`/nurses/payroll/${data.id}`}
+                className="bg-blue-500 text-white px-3 py-1 rounded"
+              >
+                Xem lương
+              </Link>
+            </td>
             <td className={tdclass}>
               <MenuSelect datas={DropDown1} item={item}>
                 <div className="bg-dry border text-main text-xl py-2 px-4 rounded-lg">
@@ -513,6 +522,7 @@ export function AppointmentTable({ data, functions, doctor }) {
           <th className={thclass}>{doctor ? "Bệnh nhân" : "Bác sĩ"}</th>
           <th className={thclass}>Trạng thái</th>
           <th className={thclass}>Thời gian</th>
+
           <th className={thclass}>Hành động</th>
         </tr>
       </thead>
@@ -550,6 +560,7 @@ export function AppointmentTable({ data, functions, doctor }) {
                   : "Đã hủy"}
               </span>
             </td>
+
             <td className={tdclass}>
               <p className="text-xs">{`${item.from} - ${item.to}`}</p>
             </td>
