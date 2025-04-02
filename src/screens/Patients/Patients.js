@@ -34,21 +34,21 @@ function Patients() {
   const boxes = [
     {
       id: 1,
-      title: "Bệnh nhân hôm nay",
+      title: "Khách hàng hôm nay",
       value: "10",
       color: ["bg-subMain", "text-subMain"],
       icon: BiTime,
     },
     {
       id: 2,
-      title: "Bệnh nhân hàng tháng",
+      title: "Khách hàng hàng tháng",
       value: "230",
       color: ["bg-orange-500", "text-orange-500"],
       icon: BsCalendarMonth,
     },
     {
       id: 3,
-      title: "Bệnh nhân hàng năm",
+      title: "Khách hàng hàng năm",
       value: "1,500",
       color: ["bg-green-500", "text-green-500"],
       icon: MdOutlineCalendarMonth,
@@ -57,19 +57,19 @@ function Patients() {
 
   // preview
   const previewPayment = (id) => {
-    navigate(`/patients/preview/${id}`);
+    navigate(`/customers/preview/${id}`);
   };
 
   return (
     <Layout>
       {/* add button */}
       <Link
-        to="/patients/create"
+        to="/customers/create"
         className="w-16 animate-bounce h-16 border border-border z-50 bg-subMain text-white rounded-full flex-colo fixed bottom-8 right-12 button-fb"
       >
         <BiPlus className="text-2xl" />
       </Link>
-      <h1 className="text-xl font-semibold">Bệnh nhân</h1>
+      <h1 className="text-xl font-semibold">Khách hàng</h1>
       {/* boxes */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
         {boxes.map((box) => (
@@ -81,10 +81,11 @@ function Patients() {
               <h2 className="text-sm font-medium">{box.title}</h2>
               <h2 className="text-xl my-6 font-medium">{box.value}</h2>
               <p className="text-xs text-textGray">
-                Tổng bệnh nhân <span className={box.color[1]}>{box.value}</span>{" "}
-                {box.title === "Bệnh nhân hôm nay"
+                Tổng Khách hàng{" "}
+                <span className={box.color[1]}>{box.value}</span>{" "}
+                {box.title === "Khách hàng hôm nay"
                   ? "hôm nay"
-                  : box.title === "Bệnh nhân hàng tháng"
+                  : box.title === "Khách hàng hàng tháng"
                   ? "tháng này"
                   : "năm này"}
               </p>
@@ -108,7 +109,7 @@ function Patients() {
         <div className="grid lg:grid-cols-5 grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-2">
           <input
             type="text"
-            placeholder='Tìm kiếm "Bệnh nhân"'
+            placeholder='Tìm kiếm "Khách hàng"'
             className="h-14 text-sm text-main rounded-md bg-dry border border-border px-4"
           />
           {/* sort  */}

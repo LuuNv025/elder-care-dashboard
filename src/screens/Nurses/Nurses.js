@@ -8,6 +8,7 @@ import { DoctorsTable } from "../../components/Tables";
 import { doctorsData } from "../../components/Datas";
 import { useNavigate } from "react-router-dom";
 import AddDoctorModal from "../../components/Modals/AddDoctorModal";
+import { Link } from "react-router-dom";
 
 function Nurses() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -41,6 +42,8 @@ function Nurses() {
       >
         <BiPlus className="text-2xl" />
       </button>
+      {/* payroll */}
+
       {/*  */}
       <h1 className="text-xl font-semibold">Điều dưỡng</h1>
       <div
@@ -59,6 +62,15 @@ function Nurses() {
               placeholder='Search "daudi mburuge"'
               className="h-14 w-full text-sm text-main rounded-md bg-dry border border-border px-4"
             />
+          </div>
+          {/* Link chuyển đến trang thanh toán chung */}
+          <div className="md:col-span-5 grid  items-center gap-4 bg-subMain text-white text-sm font-medium px-2 py-2 rounded w-fit">
+            <Link
+              to="/nurses/payroll"
+              className="text-white  px-4 py-2 rounded-md text-sm font-semibold"
+            >
+              Go to Payroll
+            </Link>
           </div>
 
           {/* export */}

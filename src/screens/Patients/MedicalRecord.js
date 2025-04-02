@@ -37,7 +37,7 @@ function MedicalRecord() {
               label="New Record"
               Icon={BiPlus}
               onClick={() => {
-                navigate(`/patients/visiting/2`);
+                navigate(`/customers/visiting/2`);
               }}
             />
           </div>

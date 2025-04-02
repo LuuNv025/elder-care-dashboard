@@ -112,7 +112,7 @@ function Dashboard() {
             <h2 className="text-sm font-medium">Bệnh nhân gần đây</h2>
             {memberData.slice(3, 8).map((member, index) => (
               <Link
-                to={`/patients/preview/${member.id}`}
+                to={`/customers/preview/${member.id}`}
                 key={index}
                 className="flex-btn gap-4 mt-6 border-b pb-4 border-border"
               >
